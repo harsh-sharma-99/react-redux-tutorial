@@ -6,11 +6,13 @@ import IceCreamContainer from "./components/iceCreamContainer";
 import store from "./redux/store";
 import NewCakeContainer from "./components/newCakeConatiner/index";
 import ItemContainer from "./components/itemContainer/index";
+import UserInfo from "./components/userContainer.js/index";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <UserInfo />
         <ItemContainer cake />
         <ItemContainer />
         <CakeContainer />
